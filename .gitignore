@@ -65,3 +65,6 @@ htmlcov/
 .cache
 temp/
 todo
+
+# Claude temporary files
+tmpclaude-*
