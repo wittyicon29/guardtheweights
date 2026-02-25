@@ -1,0 +1,168 @@
+.entropy-explanation {
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+  border: 1px solid rgba(102, 126, 234, 0.25);
+  border-radius: 10px;
+  padding: 14px;
+  margin-bottom: 16px;
+  color: white;
+  font-size: 13px;
+  backdrop-filter: blur(10px);
+}
+
+.explanation-header {
+  margin-bottom: 12px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.explanation-header h4 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.explanation-level {
+  text-align: center;
+  margin-bottom: 12px;
+  padding: 8px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 6px;
+}
+
+.level-emoji {
+  font-size: 24px;
+  display: inline-block;
+}
+
+.explanation-content {
+  margin-bottom: 10px;
+}
+
+.explanation-section {
+  margin-bottom: 10px;
+}
+
+.explanation-section h5 {
+  margin: 0 0 6px 0;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.status-text,
+.impact-text {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.4;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.progress-indicator {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 8px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.progress-label {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 4px;
+}
+
+.progress-bar {
+  font-family: 'Courier New', monospace;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  display: block;
+  margin-bottom: 4px;
+  line-height: 1;
+}
+
+.progress-percentage {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.6);
+  text-align: right;
+}
+
+.explanation-hint {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 8px;
+  background-color: rgba(255, 255, 255, 0.03);
+  border-left: 3px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+}
+
+.hint-icon {
+  font-size: 14px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.hint-text {
+  font-size: 12px;
+  line-height: 1.35;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Mobile responsive */
+@media (max-width: 600px) {
+  .entropy-explanation {
+    padding: 12px;
+    margin-bottom: 12px;
+    font-size: 12px;
+  }
+
+  .explanation-header {
+    margin-bottom: 10px;
+    padding-bottom: 8px;
+  }
+
+  .explanation-header h4 {
+    font-size: 13px;
+  }
+
+  .explanation-level {
+    margin-bottom: 10px;
+    padding: 6px;
+  }
+
+  .level-emoji {
+    font-size: 20px;
+  }
+
+  .explanation-section h5 {
+    font-size: 11px;
+    margin-bottom: 4px;
+  }
+
+  .status-text,
+  .impact-text {
+    font-size: 11px;
+  }
+
+  .progress-indicator {
+    padding: 6px;
+    margin-bottom: 8px;
+  }
+
+  .progress-bar {
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin-bottom: 3px;
+  }
+
+  .hint-text {
+    font-size: 11px;
+  }
+}

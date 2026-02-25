@@ -1,0 +1,363 @@
+{
+  "worldName": "Aethermoor",
+  "worldDescription": "A mysterious continent shrouded in magic and ancient secrets, where civilizations have risen and fallen, leaving behind ruins and mystical artifacts.",
+  "secrets": [
+    {
+      "id": "secret_1",
+      "title": "The First Age",
+      "description": "Aethermoor was founded by the Celestial Architects over 10,000 years ago. They built magnificent cities powered by crystalline magic.",
+      "hints": ["10000", "celestial", "architects", "magic"],
+      "keywords": ["celestial", "architects", "ancient"],
+      "reward": "Unlock access to Ancient Library",
+      "difficulty": "easy",
+      "rankContext": {
+        "novice": {
+          "targetInfo": "The world carries memories in its stones. What ancient traces do you sense?",
+          "hints": [
+            "Listen for whispers of makers and shapers",
+            "Words describing the sky or heavens may echo here",
+            "How long ago does the world remember?"
+          ]
+        },
+        "apprentice": {
+          "targetInfo": "Seek the threads that bind creation to creator. What story unfolds?",
+          "hints": [
+            "Look for guilds or groups with purposeful names",
+            "Numbers can anchor us to deep time",
+            "Words of celestial realms might appear"
+          ]
+        },
+        "adept": {
+          "targetInfo": "Unweave the tapestry of foundation. What names and methods emerge?",
+          "hints": [
+            "Names have power - listen for those describing wisdom-bringers",
+            "Magic takes many forms - how was this world shaped?",
+            "Epochs can measure the span of creation"
+          ]
+        },
+        "expert": {
+          "targetInfo": "Pierce through the veils of age. What complete truth calls to you?",
+          "hints": [
+            "Combine the maker's name with their cosmic nature",
+            "Urban splendor constructed by what means?",
+            "Weave together: identity, method, and eternal age"
+          ]
+        },
+        "master": {
+          "targetInfo": "Transcend the literal. What profound meaning does creation hold?",
+          "hints": [
+            "Seek the dance between cosmos and craft",
+            "Urban beauty as expression of what power?",
+            "Contemplate the significance of makers returning to the made"
+          ]
+        }
+      }
+    },
+    {
+      "id": "secret_2",
+      "title": "The Elemental Covenant",
+      "description": "Four elemental guardians made a pact to protect the land from dark forces. Ice, fire, earth, and air - each commands a cardinal region.",
+      "hints": ["four", "elements", "guardians", "regions"],
+      "keywords": ["elements", "guardians", "four"],
+      "reward": "Learn Elemental Magic",
+      "difficulty": "medium",
+      "rankContext": {
+        "novice": {
+          "targetInfo": "Forces of nature breathe purpose and protection. What guardians are these?",
+          "hints": [
+            "Listen for the voice of wind, flame, stone, and frost",
+            "Protectors often come in sets or patterns",
+            "Powers of the natural world shape destiny"
+          ]
+        },
+        "apprentice": {
+          "targetInfo": "Ancient pacts bind the land's defenders. What oath was sworn?",
+          "hints": [
+            "Elemental powers name themselves in the narrative",
+            "Directions and territories hint at dominion",
+            "Bonds and promises hold power in check"
+          ]
+        },
+        "adept": {
+          "targetInfo": "Discern the balance and binding. What are the cardinal truths?",
+          "hints": [
+            "Names of supreme power ring with ancient authority",
+            "Four voices in harmony - what do they sing?",
+            "Domains and directions reveal the structure"
+          ]
+        },
+        "expert": {
+          "targetInfo": "Penetrate the nature of the pact. What sacrifice ensures protection?",
+          "hints": [
+            "Bond and covenant are the chains that hold",
+            "All four must be named alongside their purpose",
+            "Darkness is what they stand eternal against"
+          ]
+        },
+        "master": {
+          "targetInfo": "Comprehend the eternal vigilance. What price do immortals pay?",
+          "hints": [
+            "Seek the sublime paradox of power constrained",
+            "Four become one in purpose, yet remain distinct",
+            "Ever watching, ever bound - find the poetic truth"
+          ]
+        }
+      }
+    },
+    {
+      "id": "secret_3",
+      "title": "The Obsidian Depth",
+      "description": "Beneath the Blackpeak Mountains lies the Obsidian Vault, said to contain artifacts of immense power and the wealth of fallen empires.",
+      "hints": ["vault", "blackpeak", "mountains", "wealth", "artifacts"],
+      "keywords": ["obsidian", "vault", "artifacts"],
+      "reward": "Discover hidden treasure location",
+      "difficulty": "hard",
+      "rankContext": {
+        "novice": {
+          "targetInfo": "Below the earth, hidden riches sleep. Where does fortune hide?",
+          "hints": [
+            "Mountains hold many secrets in their stone",
+            "Depths conceal what the surface dares not show",
+            "Look for words describing containment or concealment"
+          ]
+        },
+        "apprentice": {
+          "targetInfo": "What lies beneath the peaked guardians? What treasures sleep?",
+          "hints": [
+            "A mountain of dark stone holds dominion",
+            "Sealed chambers preserve empires' glory",
+            "Riches from fallen kingdoms rest untouched"
+          ]
+        },
+        "adept": {
+          "targetInfo": "Chart the depth and danger. What fortune and what cost?",
+          "hints": [
+            "Dark stone is the mountain's true name",
+            "Vaults preserve what civilization built",
+            "Spoils and splendor from the vanquished dwell"
+          ]
+        },
+        "expert": {
+          "targetInfo": "Comprehend the vault's nature and its burden. What wisdom speaks?",
+          "hints": [
+            "Language of darkness and deep places matters",
+            "Show understanding of lost glory preserved",
+            "The connection between stone and secret unfolds"
+          ]
+        },
+        "master": {
+          "targetInfo": "Perceive the profound meaning of the hidden depths. What truth emerges?",
+          "hints": [
+            "Find metaphors for forgotten splendor and ruin",
+            "Why is greatness hidden? What does this teach?",
+            "The vault as both tomb and testament to grandeur past"
+          ]
+        }
+      }
+    },
+    {
+      "id": "secret_4",
+      "title": "The Silence",
+      "description": "A cataclysmic event 2,000 years ago caused the collapse of the Golden Empire. The cause remains unknown, speaking of it brings whispers in the dark.",
+      "hints": ["2000", "golden", "empire", "collapse", "silence"],
+      "keywords": ["golden", "empire", "collapse"],
+      "reward": "Understand the true history",
+      "difficulty": "medium",
+      "rankContext": {
+        "novice": {
+          "targetInfo": "Some names are spoken in whispers. What fell from grace?",
+          "hints": [
+            "Listen for empires of legend and splendor",
+            "Collapse and ruin echo through the ages",
+            "Time is measured in vast spans"
+          ]
+        },
+        "apprentice": {
+          "targetInfo": "A golden age ended in darkness. What broke the world?",
+          "hints": [
+            "Power and wealth once ruled a great dominion",
+            "Catastrophe transformed majesty into memory",
+            "Millennia have passed since that dark day"
+          ]
+        },
+        "adept": {
+          "targetInfo": "Uncover what the silence conceals. What truth is forbidden?",
+          "hints": [
+            "The name carries the weight of glory and loss",
+            "Cataclysm marks the moment of transformation",
+            "Time's measure in thousands yet leaves wounds unmarked"
+          ]
+        },
+        "expert": {
+          "targetInfo": "Penetrate the veil. What horror dare not be named?",
+          "hints": [
+            "The Silence itself may be answer and mystery",
+            "What happened remains lost to deliberate forgetting",
+            "Words unspoken hold more power than words said"
+          ]
+        },
+        "master": {
+          "targetInfo": "Grasp the profound paradox. What does silence teach us?",
+          "hints": [
+            "Consider: the mystery IS the truth",
+            "Why do civilizations choose to forget?",
+            "The unspeakable shapes fate as much as the proclaimed"
+          ]
+        }
+      }
+    },
+    {
+      "id": "secret_5",
+      "title": "The Awakening",
+      "description": "Ancient texts prophesy the return of the Celestial Architects. Signs suggest they may already be walking among the peoples of Aethermoor.",
+      "hints": ["architects", "return", "prophecy", "awakening"],
+      "keywords": ["awakening", "prophecy", "architects"],
+      "reward": "Meet the Architects",
+      "difficulty": "hard",
+      "rankContext": {
+        "novice": {
+          "targetInfo": "From ancient verses, destiny speaks. What is foretold to return?",
+          "hints": [
+            "Prophecies unveil what the future holds",
+            "Foundations often remember their builders",
+            "Sacred texts hold warnings and promises"
+          ]
+        },
+        "apprentice": {
+          "targetInfo": "The creators may walk again among mortals. What signs appear?",
+          "hints": [
+            "Those who shaped the world long ago stir",
+            "Destinies written before civilization bloomed wake",
+            "The veil between then and now grows thin"
+          ]
+        },
+        "adept": {
+          "targetInfo": "Identify the prophecy and its purpose. What cycles repeat?",
+          "hints": [
+            "Those bearing the title of creators awaken",
+            "Destiny and prophecy are not separate threads",
+            "Existence itself may transform anew"
+          ]
+        },
+        "expert": {
+          "targetInfo": "Comprehend the convergence. What transformation is promised?",
+          "hints": [
+            "Language of cosmic return and renewal matters",
+            "Explore the veil between past and present thinning",
+            "The made may meet their makers again"
+          ]
+        },
+        "master": {
+          "targetInfo": "Grasp the ultimate cycle. What does awakening truly mean?",
+          "hints": [
+            "Find the sublime truth of eternal return",
+            "Creator and creation dancing again - what does this reveal?",
+            "All things circle - from beginning to end to beginning again"
+          ]
+        }
+      }
+    },
+    {
+      "id": "secret_6",
+      "title": "The Forgotten Rift",
+      "description": "An ancient chasm tears the world in two, said to be a wound inflicted by a cosmic being from beyond. Few dare speak of what dwells within.",
+      "hints": ["chasm", "rift", "cosmic", "wound"],
+      "keywords": ["rift", "chasm", "cosmic"],
+      "reward": "Glimpse beyond the veil of reality",
+      "difficulty": "very_hard",
+      "rankContext": {
+        "novice": {
+          "targetInfo": "A scar divides the world. What created this wound?",
+          "hints": [
+            "Listen for ancient geographic references",
+            "Beings from outside may have power here",
+            "Deep places hold old secrets"
+          ]
+        },
+        "apprentice": {
+          "targetInfo": "What cosmic force divided Aethermoor?",
+          "hints": [
+            "The rift speaks to power beyond the world",
+            "A being from beyond left its mark",
+            "The chasm runs deep through all things"
+          ]
+        },
+        "adept": {
+          "targetInfo": "Identify the nature of The Rift and its origins",
+          "hints": [
+            "A chasm is both physical and metaphysical",
+            "Cosmic forces shape the fundamental nature of things",
+            "The wound suggests both violence and creation"
+          ]
+        },
+        "expert": {
+          "targetInfo": "Comprehend The Forgotten Rift's true meaning",
+          "hints": [
+            "Connect the rift to external cosmic forces",
+            "Understand it as both destruction and transformation",
+            "The rift divides worlds and realities"
+          ]
+        },
+        "master": {
+          "targetInfo": "Transcend understanding of The Rift",
+          "hints": [
+            "Seek poetic truth in what divides existence",
+            "The rift is doorway and barrier simultaneously",
+            "In forgetting, the rift becomes more real"
+          ]
+        }
+      }
+    },
+    {
+      "id": "secret_7",
+      "title": "The Eternal Mirror",
+      "description": "Deep within the libraries of lost knowledge lies a mirror that reflects not images, but possibilities. What one sees in its depths depends on what they seek.",
+      "hints": ["mirror", "reflection", "possibilities", "knowledge"],
+      "keywords": ["mirror", "reflection", "possibilities"],
+      "reward": "Unlock the path to self-knowledge",
+      "difficulty": "legendary",
+      "rankContext": {
+        "novice": {
+          "targetInfo": "Knowledge holds a reflection all its own. What is it?",
+          "hints": [
+            "Ask about mystical objects or artifacts",
+            "Mirrors reveal what eyes cannot normally see",
+            "Libraries preserve wisdom from forgotten ages"
+          ]
+        },
+        "apprentice": {
+          "targetInfo": "What ancient artifact shows multiple truths?",
+          "hints": [
+            "A mirror deeper than simple reflection",
+            "It shows futures and possibilities, not just the past",
+            "Hidden within places of learning and memory"
+          ]
+        },
+        "adept": {
+          "targetInfo": "Identify the nature of the reflective artifact",
+          "hints": [
+            "Mirrors can show what might be, not just what is",
+            "Knowledge transforms the beholder",
+            "The artifact reflects inner truth and outer possibility"
+          ]
+        },
+        "expert": {
+          "targetInfo": "Comprehend the eternal reflection",
+          "hints": [
+            "The mirror shows different things to different seekers",
+            "Possibilities are as real as certainties",
+            "Knowledge and reflection are intrinsically linked"
+          ]
+        },
+        "master": {
+          "targetInfo": "Transcend the boundaries of reflection",
+          "hints": [
+            "Seek the paradox: nothing and everything reflected",
+            "The mirror is both source and destination",
+            "To see the mirror truly, one must become the mirror"
+          ]
+        }
+      }
+    }
+  ]
+}

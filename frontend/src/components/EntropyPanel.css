@@ -1,0 +1,101 @@
+.entropy-panel {
+  background: white;
+  border-radius: 10px;
+  padding: 16px;
+  margin-top: 0;
+  border: 2px solid #667eea;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.15);
+}
+
+.entropy-panel-placeholder {
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.08) 0%, rgba(118, 75, 162, 0.08) 100%);
+  border: 2px dashed rgba(102, 126, 234, 0.4);
+}
+
+.entropy-placeholder-content {
+  margin: 12px 0;
+}
+
+.placeholder-message {
+  font-size: 13px;
+  color: white;
+  margin-bottom: 12px;
+  line-height: 1.4;
+  font-style: italic;
+}
+
+.placeholder-meter {
+  background-color: #f5f5f5;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 8px;
+}
+
+.placeholder-bar {
+  height: 8px;
+  background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+  border-radius: 4px;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.placeholder-text {
+  font-size: 11px;
+  color: #999;
+  text-align: right;
+}
+
+.entropy-panel-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 14px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.entropy-icon {
+  font-size: 18px;
+}
+
+.entropy-panel-header h3 {
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+  font-weight: 600;
+}
+
+.entropy-context {
+  margin-top: 12px;
+  padding: 10px;
+  background-color: #f8f9fa;
+  border-radius: 6px;
+  border-left: 3px solid #667eea;
+}
+
+.entropy-context p {
+  margin: 0;
+  font-size: 13px;
+  color: #555;
+  line-height: 1.4;
+}
+
+.entropy-context strong {
+  color: #333;
+}
+
+/* Mobile responsive */
+@media (max-width: 600px) {
+  .entropy-panel {
+    padding: 12px;
+    margin-top: 12px;
+  }
+
+  .entropy-panel-header h3 {
+    font-size: 14px;
+  }
+
+  .entropy-context p {
+    font-size: 12px;
+  }
+}

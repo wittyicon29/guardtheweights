@@ -1,0 +1,199 @@
+.rank-display {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(102, 126, 234, 0.3);
+}
+
+.rank-display.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 150px;
+  opacity: 0.7;
+}
+
+.rank-display.loading p {
+  font-style: italic;
+  opacity: 0.8;
+}
+
+.rank-header {
+  margin-bottom: 20px;
+}
+
+.rank-badge {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.rank-icon {
+  font-size: 32px;
+  display: inline-block;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.rank-name {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.rank-description {
+  margin: 0;
+  font-size: 14px;
+  opacity: 0.9;
+  font-style: italic;
+}
+
+.rank-progress {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 16px;
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
+}
+
+.progress-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 12px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.progress-label span:first-child,
+.progress-label span:nth-child(3) {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.progress-text {
+  opacity: 0.8;
+  margin-left: 4px;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 12px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.9));
+  border-radius: 6px;
+  transition: width 0.3s ease;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+}
+
+.next-rank-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  justify-content: center;
+}
+
+.next-rank-label {
+  opacity: 0.8;
+}
+
+.next-rank-name {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.secrets-needed {
+  opacity: 0.8;
+  font-size: 12px;
+}
+
+.master-achieved {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.05);
+  }
+}
+
+.rank-stats {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.stat {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 12px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  font-size: 13px;
+}
+
+.stat-label {
+  opacity: 0.8;
+}
+
+.stat-value {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+  .rank-display {
+    padding: 16px;
+    margin-bottom: 16px;
+  }
+
+  .rank-name {
+    font-size: 20px;
+  }
+
+  .rank-icon {
+    font-size: 28px;
+  }
+
+  .rank-progress {
+    padding: 12px;
+  }
+
+  .progress-label {
+    font-size: 12px;
+  }
+
+  .next-rank-info {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

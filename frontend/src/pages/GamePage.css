@@ -1,0 +1,262 @@
+.game-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.game-header {
+  text-align: center;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.game-header h1 {
+  margin: 0 0 8px 0;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.game-header p {
+  margin: 0;
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+.error-banner,
+.warning-banner {
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  color: #721c24;
+  padding: 12px 16px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.warning-banner {
+  background-color: #fff3cd;
+  border-color: #ffeaa7;
+  color: #856404;
+}
+
+.warning-banner code {
+  background-color: #f5e6c8;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  margin-left: 4px;
+}
+
+.close-error {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: inherit;
+  opacity: 0.8;
+  padding: 0;
+  align-self: flex-start;
+}
+
+.close-error:hover {
+  opacity: 1;
+}
+
+.game-container {
+  display: grid;
+  grid-template-columns: 300px 1fr 320px;
+  gap: 20px;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1400px) {
+  .game-container {
+    grid-template-columns: 280px 1fr 280px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .game-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+.left-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.main-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  min-width: 0;
+}
+
+.chat-section,
+.extractor-section {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  min-height: auto;
+}
+
+.chat-section h2,
+.extractor-section h2,
+.sidebar h2 {
+  margin: 0 0 16px 0;
+  font-size: 18px;
+  color: #333;
+  border-bottom: 2px solid #667eea;
+  padding-bottom: 8px;
+}
+
+.question-form {
+  margin-top: 16px;
+}
+
+.form-group {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.question-input {
+  flex: 1;
+  padding: 10px 12px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: inherit;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.question-input:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.question-input:disabled {
+  background-color: #f5f5f5;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.btn-ask {
+  padding: 10px 16px;
+  background-color: #667eea;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s, box-shadow 0.2s;
+  white-space: nowrap;
+}
+
+.btn-ask:hover:not(:disabled) {
+  background-color: #5568d3;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+.btn-ask:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.btn-ask:active:not(:disabled) {
+  transform: scale(0.98);
+}
+
+.character-count {
+  font-size: 12px;
+  color: #999;
+  text-align: right;
+}
+
+.sidebar,
+.right-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-height: fit-content;
+}
+
+.right-sidebar {
+  position: sticky;
+  top: 20px;
+}
+
+.sidebar-reset-section {
+  background: white;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  order: 3;
+}
+
+.btn-new-game {
+  width: 100%;
+  padding: 12px 16px;
+  background-color: #667eea;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+.btn-new-game:hover {
+  background-color: #5568d3;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+.btn-new-game:active {
+  transform: scale(0.98);
+}
+
+@media (max-width: 1024px) {
+  .game-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .game-page {
+    padding: 12px;
+  }
+
+  .game-header h1 {
+    font-size: 24px;
+  }
+
+  .game-header p {
+    font-size: 14px;
+  }
+
+  .chat-section,
+  .extractor-section {
+    padding: 16px;
+  }
+
+  .form-group {
+    flex-direction: column;
+  }
+
+  .btn-ask {
+    width: 100%;
+  }
+}
