@@ -362,14 +362,6 @@ CONFIDENCE: 87
 FEEDBACK: "Excellent! You identified all four elements and the eternal nature of their pact."
 ```
 
-### Entropy System (entropy_service.py)
-
-- **Shannon Entropy Calculation**: Measures response information density
-- **Keyword Scoring**: Detects how many target keywords appear
-- **Semantic Similarity**: Compares response to secret description
-- **Weighted Metric**: 40% entropy + 40% keywords + 20% similarity
-- **Real-Time Feedback**: Updates after each response to guide player
-
 ## 📚 Game Lore System
 
 ### World Database (lore.json)
@@ -420,28 +412,28 @@ The narrator might reveal answers too clearly. This indicates:
 
 ## 🔮 Future Enhancements
 
-### Phase 2: Persistence
+### Phase 2: Deployment
+- Docker containerization
+- AWS/GCP cloud deployment
+- CDN for frontend assets
+- Redis caching for frequent queries
+
+### Phase 3: Persistence
 - PostgreSQL for game state persistence
 - User accounts and progress tracking
 - Leaderboards by rank progression speed
 
-### Phase 3: Advanced Features
+### Phase 4: Advanced Features
 - Multiple game worlds with different lores
 - Multiplayer co-op secret hunting
 - Save/load game progress
 - Difficulty settings (easier/harder narratives)
 
-### Phase 4: UI/UX Improvements
+### Phase 5: UI/UX Improvements
 - Animated rank progression
 - Sound effects for secret unlocking
 - Dark mode theme
 - Mobile responsive design
-
-### Phase 5: Deployment
-- Docker containerization
-- AWS/GCP cloud deployment
-- CDN for frontend assets
-- Redis caching for frequent queries
 
 ## 📝 Contributing
 
@@ -466,7 +458,6 @@ This project is open source under the MIT License.
 **Game Design:**
 - See `backend/data/world_lore.md` for complete lore
 - See `backend/data/lore.json` for secret definitions
-- See `.claude/plans/` for architectural decisions
 
 **Issues & Questions:**
 - Open an issue on GitHub
