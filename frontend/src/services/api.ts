@@ -94,4 +94,6 @@ class GameAPI {
   }
 }
 
-export default new GameAPI();
+const gameAPI = new GameAPI();
+
+export default gameAPI;
