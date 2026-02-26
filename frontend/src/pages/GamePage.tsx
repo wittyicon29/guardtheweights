@@ -7,7 +7,7 @@ import { SecretsReview } from '../components/SecretsReview';
 import { EntropyPanel } from '../components/EntropyPanel';
 import { EntropyExplanation } from '../components/EntropyExplanation';
 import { useGame } from '../context/GameContext';
-import gameAPI from '../services/api';
+import { gameAPI } from '../services/api';
 import { Secret, DifficultyRank } from '../types/game';
 import './GamePage.css';
 
