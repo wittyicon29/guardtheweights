@@ -1,3 +1,4 @@
+/* Reset and Base Styles */
 * {
   margin: 0;
   padding: 0;
@@ -5,26 +6,236 @@
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'EB Garamond', 'Garamond', serif;
+  background: #06080f;
+  color: #e8dfc0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 code {
-  font-family: 'Courier New', monospace;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.9em;
 }
 
 button {
-  font-family: inherit;
+  font-family: 'Cinzel Decorative', serif;
 }
 
 input,
 textarea,
 select {
-  font-family: inherit;
+  font-family: 'EB Garamond', serif;
 }
 
+/* Root Container with Cosmic Background */
 #root {
   width: 100%;
   min-height: 100vh;
+  background: #06080f;
+  position: relative;
+  overflow-x: hidden;
+}
+
+#root::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:
+    radial-gradient(2px 2px at 20px 30px, #f5f5dc, rgba(245, 245, 220, 0)),
+    radial-gradient(2px 2px at 60px 70px, white, rgba(255, 255, 255, 0)),
+    radial-gradient(1px 1px at 50px 50px, #dcdcdc, rgba(220, 220, 220, 0)),
+    radial-gradient(1px 1px at 130px 80px, white, rgba(255, 255, 255, 0)),
+    radial-gradient(2px 2px at 90px 10px, #f5f5dc, rgba(245, 245, 220, 0));
+  background-repeat: repeat;
+  background-size: 200px 200px;
+  opacity: 0.3;
+  animation: twinkleStars 5s ease-in-out infinite;
+  pointer-events: none;
+  z-index: 0;
+}
+
+#root::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:
+    linear-gradient(90deg, transparent 0%, rgba(0, 245, 196, 0.03) 25%, transparent 50%, rgba(0, 245, 196, 0.03) 75%, transparent 100%);
+  background-size: 100px 100px;
+  animation: lyeLinesFlow 8s linear infinite;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Mist Effect at Bottom */
+@keyframes mistDrift {
+  0% {
+    transform: translateY(0px);
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    transform: translateY(-20px);
+    opacity: 0.2;
+  }
+}
+
+/* Star Twinkle Animation */
+@keyframes twinkleStars {
+  0%, 100% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.6;
+  }
+}
+
+/* Ley Line Flow Animation */
+@keyframes lyeLinesFlow {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100px 0;
+  }
+}
+
+/* Teal Glow Pulse */
+@keyframes glowPulseTeal {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(0, 245, 196, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(0, 245, 196, 0.6);
+  }
+}
+
+/* Gold Glow Pulse */
+@keyframes glowPulseGold {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(201, 168, 76, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(201, 168, 76, 0.6);
+  }
+}
+
+/* Elemental Guardian Animations */
+@keyframes flickerFlame {
+  0%, 100% {
+    opacity: 0.4;
+    transform: scale(1);
+  }
+  25% {
+    opacity: 0.6;
+    transform: scale(1.05);
+  }
+  50% {
+    opacity: 0.3;
+    transform: scale(0.95);
+  }
+  75% {
+    opacity: 0.5;
+    transform: scale(1.02);
+  }
+}
+
+@keyframes crystallizeIce {
+  0%, 100% {
+    opacity: 0.4;
+    filter: brightness(1);
+  }
+  50% {
+    opacity: 0.7;
+    filter: brightness(1.2);
+  }
+}
+
+@keyframes rumbleEarth {
+  0%, 100% {
+    opacity: 0.3;
+    transform: translateY(0);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateY(2px);
+  }
+}
+
+@keyframes swirlAir {
+  0% {
+    opacity: 0.3;
+    transform: rotate(0deg);
+  }
+  100% {
+    opacity: 0.5;
+    transform: rotate(360deg);
+  }
+}
+
+/* Elemental Guardians Positioning */
+.elemental-guardian {
+  position: fixed;
+  font-size: 2.5rem;
+  pointer-events: none;
+  z-index: 5;
+}
+
+.guardian-fire {
+  top: 20px;
+  left: 20px;
+  animation: flickerFlame 3s ease-in-out infinite;
+}
+
+.guardian-ice {
+  top: 20px;
+  right: 20px;
+  animation: crystallizeIce 4s ease-in-out infinite;
+}
+
+.guardian-earth {
+  bottom: 80px;
+  left: 20px;
+  animation: rumbleEarth 3.5s ease-in-out infinite;
+}
+
+.guardian-air {
+  bottom: 80px;
+  right: 20px;
+  animation: swirlAir 5s linear infinite;
+}
+
+/* Forgotten Rift - Bottom Crack */
+.forgotten-rift {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 30px;
+  background: linear-gradient(to top, rgba(128, 0, 255, 0.4), rgba(128, 0, 255, 0.1));
+  border-top: 2px solid rgba(128, 0, 255, 0.6);
+  pointer-events: none;
+  z-index: 4;
+  animation: riftPulse 3s ease-in-out infinite;
+  box-shadow: inset 0 0 30px rgba(128, 0, 255, 0.3);
+}
+
+@keyframes riftPulse {
+  0%, 100% {
+    opacity: 0.5;
+    box-shadow: inset 0 0 30px rgba(128, 0, 255, 0.3);
+  }
+  50% {
+    opacity: 0.8;
+    box-shadow: inset 0 0 50px rgba(128, 0, 255, 0.5);
+  }
 }
