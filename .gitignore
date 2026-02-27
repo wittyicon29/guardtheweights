@@ -68,3 +68,6 @@ todo
 
 # Claude temporary files
 tmpclaude-*
+
+# Docker
+guard-key.pem

@@ -46,7 +46,7 @@ export function GamePage() {
       } catch (err) {
         setApiConnected(false);
         console.error('API connection failed:', err);
-        setError('Cannot connect to game backend. Make sure it is running on http://localhost:8000');
+        setError('Cannot connect to game backend. Please ensure the Docker container is running and healthy.');
       } finally {
         setRankLoading(false);
       }
