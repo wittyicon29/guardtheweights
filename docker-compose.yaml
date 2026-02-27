@@ -24,13 +24,12 @@ services:
     restart: always
 
   nginx:
-    image: nginx:alpine
+    build:
+      context: .
+      dockerfile: nginx.Dockerfile
     container_name: guardtheweights-nginx
     ports:
       - "80:80"   # ONLY public port
-    volumes:
-      - ./nginx.conf:/etc/nginx/nginx.conf
-      - ./frontend/build:/usr/share/nginx/html
     depends_on:
       backend:
         condition: service_healthy
