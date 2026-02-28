@@ -7,7 +7,7 @@ services:
       dockerfile: Dockerfile
     container_name: guardtheweights-backend
     expose:
-      - "8000"   # internal only
+      - "8000"
     env_file:
       - ./backend/.env
     environment:
@@ -29,13 +29,32 @@ services:
       dockerfile: nginx.Dockerfile
     container_name: guardtheweights-nginx
     ports:
-      - "80:80"   # ONLY public port
+      - "80:80"
+      - "443:443"   # 👈 REQUIRED FOR HTTPS
     depends_on:
       backend:
         condition: service_healthy
+    volumes:
+      - ./certbot/conf:/etc/letsencrypt
+      - ./certbot/www:/var/www/certbot
     networks:
       - guardtheweights-network
     restart: always
+
+  certbot:
+    image: certbot/certbot
+    container_name: guardtheweights-certbot
+    volumes:
+      - ./certbot/conf:/etc/letsencrypt
+      - ./certbot/www:/var/www/certbot
+    entrypoint: >
+      sh -c "trap exit TERM;
+      while :; do
+        certbot renew;
+        sleep 12h & wait $${!};
+      done;"
+    networks:
+      - guardtheweights-network
 
 networks:
   guardtheweights-network:
