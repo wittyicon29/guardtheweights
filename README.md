@@ -462,8 +462,3 @@ This project is open source under the MIT License.
 **Issues & Questions:**
 - Open an issue on GitHub
 - Review troubleshooting section above
-- Check existing documentation
-
----
-
-**Begin your journey through the mysteries of Aethermoor. The narrator awaits your questions.** 🌙✨
